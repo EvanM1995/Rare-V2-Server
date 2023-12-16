@@ -1,0 +1,37 @@
+[
+  {
+      "model": "yourapp.category",
+      "pk": 1,
+      "fields": {
+          "label": "Category 1"
+      }
+  },
+  {
+      "model": "yourapp.category",
+      "pk": 2,
+      "fields": {
+          "label": "Category 2"
+      }
+  },
+  {
+      "model": "yourapp.category",
+      "pk": 3,
+      "fields": {
+          "label": "Category 3"
+      }
+  },
+  {
+      "model": "yourapp.category",
+      "pk": 4,
+      "fields": {
+          "label": "Category 4"
+      }
+  },
+  {
+      "model": "yourapp.category",
+      "pk": 5,
+      "fields": {
+          "label": "Category 5"
+      }
+  }
+]
