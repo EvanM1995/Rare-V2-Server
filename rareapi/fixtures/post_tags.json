@@ -1,0 +1,43 @@
+[
+  {
+      "model": "yourapp.posttags",
+      "pk": 1,
+      "fields": {
+          "post": 1,
+          "tag": 1
+      }
+  },
+  {
+      "model": "yourapp.posttags",
+      "pk": 2,
+      "fields": {
+          "post": 1,
+          "tag": 2
+      }
+  },
+  {
+      "model": "yourapp.posttags",
+      "pk": 3,
+      "fields": {
+          "post": 2,
+          "tag": 3
+      }
+  },
+  {
+      "model": "yourapp.posttags",
+      "pk": 4,
+      "fields": {
+          "post": 2,
+          "tag": 1
+      }
+  },
+  {
+      "model": "yourapp.posttags",
+      "pk": 5,
+      "fields": {
+          "post": 3,
+          "tag": 2
+      }
+  }
+]
+

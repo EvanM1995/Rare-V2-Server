@@ -1,0 +1,42 @@
+[
+  {
+      "model": "yourapp.user",
+      "pk": 1,
+      "fields": {
+          "uid": "user_1",
+          "bio": "Bio for user 1"
+      }
+  },
+  {
+      "model": "yourapp.user",
+      "pk": 2,
+      "fields": {
+          "uid": "user_2",
+          "bio": "Bio for user 2"
+      }
+  },
+  {
+      "model": "yourapp.user",
+      "pk": 3,
+      "fields": {
+          "uid": "user_3",
+          "bio": "Bio for user 3"
+      }
+  },
+  {
+      "model": "yourapp.user",
+      "pk": 4,
+      "fields": {
+          "uid": "user_4",
+          "bio": "Bio for user 4"
+      }
+  },
+  {
+      "model": "yourapp.user",
+      "pk": 5,
+      "fields": {
+          "uid": "user_5",
+          "bio": "Bio for user 5"
+      }
+  }
+]
