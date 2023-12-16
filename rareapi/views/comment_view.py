@@ -62,10 +62,10 @@ class CommentView(ViewSet):
     return Response(None, status=status.HTTP_204_NO_CONTENT)
   
   
-class CommentSerializer(serializers.ModelSerialzer):  
+class CommentSerializer(serializers.ModelSerializer):  
   """Comment JSON serializer"""
   
   class Meta:
     model = Comment
-    fields = ('id', 'auther_id', 'post_id', 'content', 'created_on')
+    fields = ('id', 'author_id', 'post_id', 'content', 'created_on')
       
