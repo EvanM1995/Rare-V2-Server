@@ -1,37 +1,37 @@
 [
-  {
-      "model": "yourapp.category",
+    {
+      "model": "rareapi.category",
       "pk": 1,
       "fields": {
-          "label": "Category 1"
+        "label": "Electronics"
       }
-  },
-  {
-      "model": "yourapp.category",
+    },
+    {
+      "model": "rareapi.category",
       "pk": 2,
       "fields": {
-          "label": "Category 2"
+        "label": "Clothing"
       }
-  },
-  {
-      "model": "yourapp.category",
+    },
+    {
+      "model": "rareapi.category",
       "pk": 3,
       "fields": {
-          "label": "Category 3"
+        "label": "Books"
       }
-  },
-  {
-      "model": "yourapp.category",
+    },
+    {
+      "model": "rareapi.category",
       "pk": 4,
       "fields": {
-          "label": "Category 4"
+        "label": "Home and Garden"
       }
-  },
-  {
-      "model": "yourapp.category",
+    },
+    {
+      "model": "rareapi.category",
       "pk": 5,
       "fields": {
-          "label": "Category 5"
+        "label": "Sports and Outdoors"
       }
-  }
-]
+    }
+  ]
