@@ -62,6 +62,6 @@ class PostView(ViewSet):
 
 class PostSerializer(serializers.ModelSerializer):  
 
-  class Meta:
-    model = Post
-    fields = ('id', 'rare_user_id', 'category_id', 'title', 'publication_date', 'image_url', 'content', 'approved')
+    class Meta:
+        model = Post
+        fields = ('id', 'rare_user_id', 'category_id', 'title', 'publication_date', 'image_url', 'content', 'approved')
