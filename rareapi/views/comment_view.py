@@ -14,7 +14,7 @@ class CommentView(ViewSet):
       comment = Comment.objects.get(pk=pk)
       serializer = CommentSerializer(comment)
       return Response(serializer.data)
-    except comment.DoesNotExist as ex:
+    except Comment.DoesNotExist as ex:
       return Response({'message': ex.args[0]}, status=status.HTTP_400_BAD_REQUEST)
     
   def list(self, request):
@@ -27,10 +27,10 @@ class CommentView(ViewSet):
   def create(self, request):
     """Create a comment"""
     
-    author = User.objects.get(pk=request.data['authorId'])
-    post = Post.objects.get(pk=request.data['postId'])
+    author = User.objects.get(pk=request.data['author_id'])
+    post = Post.objects.get(pk=request.data['post_id'])
     
-    comment = comment.objects.creat(
+    comment = Comment.objects.create(
       author = author, 
       post = post,
       content = request.data['content'],
@@ -44,9 +44,9 @@ class CommentView(ViewSet):
     """Updating a comment"""
     
     comment = Comment.objects.get(pk=pk)
-    author = User.objects.get(pk=request.data['authorId'])
+    author = User.objects.get(pk=request.data['author_id'])
     comment.author = author
-    post = Post.objects.get(pk=request.data['postId'])
+    post = Post.objects.get(pk=request.data['post_id'])
     comment.post = post
     comment.content = request.data['content']
     comment.save()
