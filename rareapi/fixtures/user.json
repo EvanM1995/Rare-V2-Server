@@ -1,42 +1,32 @@
 [
-  {
-      "model": "rareapi.user",
-      "id": 1,
-      "fields": {
-          "uid": "user_1",
-          "bio": "Bio for user 1"
-      }
-  },
-  {
-      "model": "rareapi.user",
-      "id": 2,
-      "fields": {
-          "uid": "user_2",
-          "bio": "Bio for user 2"
-      }
-  },
-  {
-      "model": "rareapi.user",
-      "id": 3,
-      "fields": {
-          "uid": "user_3",
-          "bio": "Bio for user 3"
-      }
-  },
-  {
-      "model": "rareapi.user",
-      "id": 4,
-      "fields": {
-          "uid": "user_4",
-          "bio": "Bio for user 4"
-      }
-  },
-  {
-      "model": "rareapi.user",
-      "id": 5,
-      "fields": {
-          "uid": "user_5",
-          "bio": "Bio for user 5"
-      }
-  }
+{
+    "model": "rareapi.user",
+    "pk": 1,
+    "fields": {
+        "uid": "user1_uid",
+        "bio": "Bio for user 1.",
+        "name": "user 1 name",
+        "admin": "False"
+    }
+},
+{
+    "model": "rareapi.user",
+    "pk": 2,
+    "fields": {
+        "uid": "user2_uid",
+        "bio": "Bio for user 2.",
+        "name": "user 2 name",
+        "admin": "False"
+    }
+},
+{
+    "model": "rareapi.user",
+    "pk": 3,
+    "fields": {
+        "uid": "user3_uid",
+        "bio": "Bio for user 3.",
+        "name": "user 3 name",
+        "admin": "True"
+    }
+}
 ]
