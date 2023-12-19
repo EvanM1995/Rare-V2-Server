@@ -43,16 +43,32 @@ class CommentView(ViewSet):
   def update(self, request, pk):
     """Updating a comment"""
     
-    comment = Comment.objects.get(pk=pk)
-    author = User.objects.get(pk=request.data['author_id'])
-    comment.author = author
-    post = Post.objects.get(pk=request.data['post_id'])
-    comment.post = post
-    comment.content = request.data['content']
-    comment.save()
+    try:
+        comment = Comment.objects.get(pk=pk)
+    except Comment.DoesNotExist:
+        return Response({"error": "Comment does not exist"}, status=status.HTTP_404_NOT_FOUND)
+   
+    if 'content' in request.data:
+        comment.content = request.data['content']
+  
+    if 'author_id' in request.data:
+        try:
+            author = User.objects.get(pk=request.data['author_id'])
+            comment.author = author
+        except User.DoesNotExist:
+            return Response({"error": "Author does not exist"}, status=status.HTTP_404_NOT_FOUND)
     
+    if 'post_id' in request.data:
+        try:
+            post = Post.objects.get(pk=request.data['post_id'])
+            comment.post = post
+        except Post.DoesNotExist:
+            return Response({"error": "Post does not exist"}, status=status.HTTP_404_NOT_FOUND)
+    
+    comment.save()
     serializer = CommentSerializer(comment)
     return Response(serializer.data, status=status.HTTP_200_OK)
+
   
   def destroy(self, request, pk):
     """Delete Comment"""
