@@ -1,43 +1,74 @@
 [
   {
-      "model": "yourapp.posttags",
-      "pk": 1,
-      "fields": {
-          "post": 1,
-          "tag": 1
-      }
+    "model": "rareapi.posttags",
+    "pk": 1,
+    "fields": {
+      "post": 1,
+      "tag": 1
+    }
   },
   {
-      "model": "yourapp.posttags",
-      "pk": 2,
-      "fields": {
-          "post": 1,
-          "tag": 2
-      }
+    "model": "rareapi.posttags",
+    "pk": 2,
+    "fields": {
+      "post": 1,
+      "tag": 2
+    }
   },
   {
-      "model": "yourapp.posttags",
-      "pk": 3,
-      "fields": {
-          "post": 2,
-          "tag": 3
-      }
+    "model": "rareapi.posttags",
+    "pk": 3,
+    "fields": {
+      "post": 1,
+      "tag": 3
+    }
   },
   {
-      "model": "yourapp.posttags",
-      "pk": 4,
-      "fields": {
-          "post": 2,
-          "tag": 1
-      }
+    "model": "rareapi.posttags",
+    "pk": 4,
+    "fields": {
+      "post": 2,
+      "tag": 1
+    }
   },
   {
-      "model": "yourapp.posttags",
-      "pk": 5,
-      "fields": {
-          "post": 3,
-          "tag": 2
-      }
+    "model": "rareapi.posttags",
+    "pk": 5,
+    "fields": {
+      "post": 2,
+      "tag": 2
+    }
+  },
+  {
+    "model": "rareapi.posttags",
+    "pk": 6,
+    "fields": {
+      "post": 2,
+      "tag": 3
+    }
+  },
+  {
+    "model": "rareapi.posttags",
+    "pk": 7,
+    "fields": {
+      "post": 3,
+      "tag": 1
+    }
+  },
+  {
+    "model": "rareapi.posttags",
+    "pk": 8,
+    "fields": {
+      "post": 3,
+      "tag": 2
+    }
+  },
+  {
+    "model": "rareapi.posttags",
+    "pk": 9,
+    "fields": {
+      "post": 3,
+      "tag": 3
+    }
   }
 ]
-

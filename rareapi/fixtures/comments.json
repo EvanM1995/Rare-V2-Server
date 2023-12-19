@@ -1,50 +1,32 @@
 [
   {
-      "model": "yourapp.comment",
+      "model": "rareapi.comment",
       "pk": 1,
       "fields": {
-          "author": 1,
-          "post": 1,    
+          "author_id": 1,  
+          "post_id": 1,    
           "content": "This is the first comment.",
-          "created_on": "2023-12-16T10:00:00Z"
+          "created_on": "2023-01-01T12:00:00Z"
       }
   },
   {
-      "model": "yourapp.comment",
+      "model": "rareapi.comment",
       "pk": 2,
       "fields": {
-          "author": 2,  
-          "post": 1,    
+          "author_id": 2,  
+          "post_id": 1,    
           "content": "Another comment on the same post.",
-          "created_on": "2023-12-16T10:15:00Z"
+          "created_on": "2023-01-02T14:30:00Z"
       }
   },
   {
-      "model": "yourapp.comment",
+      "model": "rareapi.comment",
       "pk": 3,
       "fields": {
-          "author": 1, 
+          "author_id": 1,  
+          "post_id": 2,    
           "content": "Comment on a different post.",
-          "created_on": "2023-12-16T10:30:00Z"
-      }
-  },
-  {
-      "model": "yourapp.comment",
-      "pk": 4,
-      "fields": {
-          "author": 3,  
-          "post": 2,    
-          "content": "Yet another comment on post 2.",
-          "created_on": "2023-12-16T10:45:00Z"
-      }
-  },
-  {
-      "model": "yourapp.comment",
-      "pk": 5,
-      "fields": {
-          "author": 2,  
-          "content": "Comment on a different post.",
-          "created_on": "2023-12-16T11:00:00Z"
+          "created_on": "2023-01-03T18:45:00Z"
       }
   }
 ]

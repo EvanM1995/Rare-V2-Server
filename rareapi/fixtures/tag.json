@@ -1,35 +1,35 @@
 [
   {
-      "model": "yourapp.tag",
-      "pk": 1,
+      "model": "rareapi.tag",
+      "id": 1,
       "fields": {
           "label": "Tag 1"
       }
   },
   {
-      "model": "yourapp.tag",
-      "pk": 2,
+      "model": "rareapi.tag",
+      "id": 2,
       "fields": {
           "label": "Tag 2"
       }
   },
   {
-      "model": "yourapp.tag",
-      "pk": 3,
+      "model": "rareapi.tag",
+      "id": 3,
       "fields": {
           "label": "Tag 3"
       }
   },
   {
-      "model": "yourapp.tag",
-      "pk": 4,
+      "model": "rareapi.tag",
+      "id": 4,
       "fields": {
           "label": "Tag 4"
       }
   },
   {
-      "model": "yourapp.tag",
-      "pk": 5,
+      "model": "rareapi.tag",
+      "id": 5,
       "fields": {
           "label": "Tag 5"
       }
