@@ -11,6 +11,7 @@ def check_user(request):
       request -- The full HTTP request object
     '''
     uid = request.data['uid']
+   
     user = User.objects.filter(uid=uid).first()
 
     
@@ -18,10 +19,13 @@ def check_user(request):
         data = {
             'id': user.id,
             'uid': user.uid,
-            'bio': user.bio
+            'bio': user.bio,
+            'name': user.name,
+            'admin': user.admin
         }
         return Response(data)
     else:
+        
         data = { 'valid': False }
         return Response(data)
 
@@ -36,11 +40,15 @@ def register_user(request):
     
     user = User.objects.create(
         bio=request.data['bio'],
-        uid=request.data['uid']
+        uid=request.data['uid'],
+        name=request.data['name']
     )
+    
     data = {
         'id': user.id,
         'uid': user.uid,
-        'bio': user.bio
+        'bio': user.bio,
+        'name': user.name,
+        'admin': user.admin
     }
     return Response(data)
